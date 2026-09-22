@@ -4,32 +4,32 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇮🇶 IQ 01 - xiaohe
-  server: 104.21.8.63
+- name: 🇧🇪 比利时 (Belgium) 01 - xiaohe
+  server: 141.98.233.6
   port: 443
   udp: true
   type: vless
-  uuid: b19419fa-8009-455b-b059-765e2856883a
+  uuid: b2593749-691c-428c-9481-14979cba3446
   tls: true
-  servername: akbarian34.j9z65ce2uyks.workers.dev
+  servername: xi.tbv.ccwu.cc
   skip-cert-verify: false
   client-fingerprint: chrome
   network: ws
   ws-opts:
-    path: /vl/Q5xRgb8wfW3RTYFIfDA16PzboJrjLuZ9?ed=2560
+    path: /proxyip=us.xiabibi.cf
     headers:
-      Host: akbarian34.j9z65ce2uyks.workers.dev
+      Host: xi.tbv.ccwu.cc
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇮🇶 IQ 01 - xiaohe
+  - 🇧🇪 比利时 (Belgium) 01 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇮🇶 IQ 01 - xiaohe
+  - 🇧🇪 比利时 (Belgium) 01 - xiaohe
 rules:
 - MATCH,PROXIES
